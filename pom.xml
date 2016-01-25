@@ -11,13 +11,17 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>se.racemates.maven</groupId>
                 <artifactId>connectiq-run</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0</version>
                 <executions>
                     <execution>
                         <id>monkeytest</id>
+                        <goals>
+                            <goal>monkeytest</goal>
+                        </goals>
                         <configuration>
-                            <sdkPath>C:/garmin/sdk1_2_2/bin/simulator.exe</sdkPath>
+                            <sdkPath>C:/garmin/sdk1_2_2</sdkPath>
                             <programFile>${project.build.directory}/test-classes/logsome.prg</programFile>
                         </configuration>
                     </execution>
