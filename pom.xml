@@ -13,7 +13,7 @@
             <plugin>
                 <groupId>se.racemates.maven</groupId>
                 <artifactId>connectiq-run</artifactId>
-                <version>1.0</version>
+                <version>1.1-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>monkeytest</id>
@@ -21,6 +21,7 @@
                             <goal>monkeytest</goal>
                         </goals>
                         <configuration>
+                            <runOnce>false</runOnce>
                             <sdkPath>C:/garmin/sdk1_2_2</sdkPath>
                             <programFile>${project.build.directory}/test-classes/logsome.prg</programFile>
                         </configuration>
